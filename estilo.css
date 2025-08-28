@@ -1,34 +1,63 @@
 * body{
     margin: 0px;
     padding: 0px;
+    font-family: "Playfair Display", serif;
 }
-#containerTopo{
+#topoContainer{
     width: 980px;
-    height: 100px;
-    background-color: black;
+    height: 200px;
     margin: auto;
+    background-color: brown;
 }
 #logo{
     width: 200px;
-    height: 100px;
-    background-color: rgb(239, 6, 6);
+    height: 200px;
     float: left;
+    background-color: blueviolet;
 }
 #menu{
     width: 780px;
-    height: 100px;
-    background-color: rgb(255, 79, 79);
+    height: 200px;
     float: right;
+    background-color: red;
+    text-align: center;
+    word-spacing: 10px;
+}
+#menu a{
+    color: white;
+    text-decoration: none;
 }
 #banner{
     width: 700px;
     height: 400px;
-    background-color: chocolate;
+    background-color: brown;
     margin: auto;
+    margin-top: 50px;
+}
+#conteudoSite{
+    width: 980px;
+    height: 500px;
+    background-color: cadetblue;
+    margin: auto;
+    margin-top: 50px;
+}
+#esquerda{
+    width: 450px;
+    height: 500px;
+    float: left;
+    background-color: blueviolet;
+}
+#direita{
+    width: 450px;
+    height: 500px;
+    float: right;
+    background-color: blue;
 }
 #rodape{
     width: 980px;
-    height: 100px;
-    background-color: rgb(235, 7, 7);
+    height: 50px;
+    background-color: cornflowerblue;
     margin: auto;
+    margin-top: 50px;
+    clear: both;
 }
