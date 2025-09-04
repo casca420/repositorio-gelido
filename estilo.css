@@ -10,8 +10,8 @@
    /* background-color: brown; */
 }
 #logo{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     float: left;
    /* background-color: rgb(171, 218, 18); */
 }
@@ -46,8 +46,8 @@
 }
 #conteudoSite{
     width: 980px;
-    height: 500px;
-    background-color: cadetblue;
+    height: 600px;
+   /* background-color: cadetblue;*/
     margin: auto;
     margin-top: 50px;
 }
