@@ -55,13 +55,13 @@
     width: 450px;
     height: 500px;
     float: left;
-    background-color: blueviolet;
+   /* background-color: blueviolet; */
 }
 #direita{
     width: 450px;
     height: 500px;
     float: right;
-    background-color: blue;
+   /* background-color: blue;*/
 }
 #rodape{
     width: 980px;
@@ -70,4 +70,21 @@
     margin: auto;
     margin-top: 50px;
     clear: both;
+}
+.input{
+    width: 100%;
+    height: 30px;
+}
+.mensagem{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+.botao{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: cornflowerblue;
+    padding: 10px;
+    color: aliceblue;
 }
