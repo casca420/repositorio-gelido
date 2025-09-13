@@ -56,4 +56,38 @@
     clear: both;
     margin-top: 160px;
 }
-
+#containerContato{
+    width: 980px;
+    height: 500px;
+    /* background-color: blueviolet; */
+    margin: auto;
+}
+#esquerdaContato{
+    width: 400px;
+    height: 500px;
+    float: left;
+   /* background-color: blueviolet; */
+}
+#direitaContato{
+    width: 400px;
+    height: 500px;
+    float: right;
+   /* background-color: blue;*/
+}
+.input{
+    width: 100%;
+    height: 30px;
+}
+.mensagem{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+.botao{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: cornflowerblue;
+    padding: 10px;
+    color: aliceblue;
+}
