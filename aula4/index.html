@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css">
-    <title>Document</title>
+    <title>JS</title>
 </head>
 <body>
+    <form>
+        Nome: <input type="text" id="nome" >
+        Endereço: <input type="text" id="endereco" >
+              <input type="submit" onclick="imprimirVariaveis()" value="Cadastrar" >
+
+    </form>
     
     <script>
-        var nome = "Bernardo";
-        var ano = 2025;
-        alert(nome + " " + ano)
+        function imprimirVariaveis(){
+        var nome = document.getElementById('nome').value;
+        var endereco = document.getElementById('endereco').value;
+       // var ano = 2025; 
+       // var ensino = "primeiro ano" 
+        alert(nome + " - " + endereco)
+        }
     </script>
 </body>
 </html>
