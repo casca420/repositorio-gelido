@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercícios de Formulários</h1>
+    <h2>Exercício 3 - Cadastro de Produto</h2>
+    <form>
+        Produto: <input type="text" id="filme">
+        <br> Categoria: 
+         <select name="categoria" id="categoria">
+            <option> Informática </option>
+            <option> Contrução </option>
+            <option> Limpeza </option>
+        </select>
+
+        <p>Em estoque?</p>
+        Sim <input type="radio" name="sistema" id="sim" value="sim">
+        Não <input type="radio" name="sistema" id="não" value="não">
+
+        <br> <input type="submit" value="Enviar" onclick="imprimirVariaveis()" >
+             <input type="reset" value="Limpar valores">
+    </form>
+
+    <script>
+        function imprimirVariaveis(){
+            var produto = document.getElementById('produto').value;
+            var categoria = document.getElementById('categoria').value;
+
+            var sim = document.getElementById('sim').value;
+            var nao = document.getElementById('nao').value;
+
+             if(sim.checked){
+                resultado = sim.value;
+            }else if(nao.checked){
+                resultado = nao.value;
+            }
+
+            alert(produto + " " + categoria + " " + resultado);
+
+            document.write(produto + " - " + categoria + " - " + resultado);
+
+        }
+    </script>
+
+</body>
+</html>

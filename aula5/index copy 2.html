@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercícios de Formulários</h1>
+    <h2>Exercício 2 - Cadastro de Aluno</h2>
+    <form>
+        Nome: <input type="text" id="nome">
+        <br> Série: 
+         <select name="serie" id="serie">
+            <option> 6 série </option>
+            <option> 5 série </option>
+            <option> 4 série </option>
+        </select>
+
+        <p>Turno</p>
+        Manhã <input type="radio" name="sistema" id="Manhã" value="Manhã">
+        Tarde <input type="radio" name="sistema" id="Tarde" value="Tarde">
+        Noite <input type="radio" name="sistema" id="Noite" value="Noite">
+
+        <br> <input type="submit" value="Enviar" onclick="imprimirVariaveis()" >
+             <input type="reset" value="Limpar valores">
+    </form>
+
+    <script>
+        function imprimirVariaveis(){
+            var nome = document.getElementById('nome').value;
+            var serie = document.getElementById('serie').value;
+
+            var manha = document.getElementById('manha').value;
+            var tarde = document.getElementById('tarde').value;
+            var noite = document.getElementById('noite').value;
+
+             if(manha.checked){
+                resultado = manha.value;
+            }else if(tarde.checked){
+                resultado = tarde.value;
+            }else if(noite.checked){
+                resultado = noite.value;
+            }
+
+            alert(nome + " " + serie + " " + resultado);
+
+            document.write(nome + " - " + serie + " - " + resultado);
+
+        }
+    </script>
+
+</body>
+</html>

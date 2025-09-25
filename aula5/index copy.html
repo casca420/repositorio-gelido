@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exercícios de Formulários</h1>
+    <h2>Exercício 1 - Cadastro de Filme</h2>
+    <form>
+        Filme: <input type="text" id="filme">
+        <br> Gênero: 
+         <select name="genero" id="genero">
+            <option> Ação </option>
+            <option> Comédia </option>
+            <option> Drama </option>
+        </select>
+
+        <p>Assistido?</p>
+        Sim <input type="radio" name="sistema" id="sim" value="sim">
+        Não <input type="radio" name="sistema" id="não" value="não">
+
+        <br> <input type="submit" value="Enviar" onclick="imprimirVariaveis()" >
+             <input type="reset" value="Limpar valores">
+    </form>
+
+    <script>
+        function imprimirVariaveis(){
+            var filme = document.getElementById('filme').value;
+            var genero = document.getElementById('genero').value;
+
+            var sim = document.getElementById('sim').value;
+            var nao = document.getElementById('nao').value;
+
+            if(sim.checked){
+                resultado = sim.value;
+            }else if(nao.checked){
+                resultado = nao.value;
+            }
+
+            alert(filme + " - " + genero + " - " + resultado);
+
+            document.write(filme + " - " + genero + " - " + resultado);
+
+        }
+    </script>
+
+</body>
+</html>

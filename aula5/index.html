@@ -16,8 +16,8 @@
             <option> JS </option>
         </select>
 
-        Apple <input type="radio" name="apple" id="apple" value="apple">
-        Linux <input type="radio" name="linux" id="linux" value="linux">
+        Apple <input type="radio" name="sistema" id="apple" value="apple">
+        Linux <input type="radio" name="sistema" id="linux" value="linux">
 
         <input type="submit" value="Enviar" onclick="imprimirVariaveis()" >
     </form>
@@ -26,10 +26,20 @@
         function imprimirVariaveis(){
             var nome = document.getElementById('nome').value;
             var cursos = document.getElementById('cursos').value;
-            var apple = document.getElementById('apple').value;
-            var linux = document.getElementById('linux').value;
 
-            alert(nome + " " + cursos + " " + apple + " " + linux);
+            var apple = document.getElementById('apple');
+            var linux = document.getElementById('linux');
+            var resultado = "";
+
+            if(apple.checked){
+                resultado = apple.value;
+            }else if(linux.checked){
+                resultado = linux.value;
+            }
+
+            alert(nome + " - " + cursos + " - " + resultado);
+
+            document.write(nome + " - " + cursos + " - " + resultado);
 
         }
     </script>
