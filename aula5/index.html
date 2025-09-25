@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        Nome: <input type="text" id="nome" placeholder="Ex: Bernardo">
+        Selecione: 
+         <select name="cursos" id="cursos">
+            <option> HTML </option>
+            <option> CSS </option>
+            <option> JS </option>
+        </select>
+
+        Apple <input type="radio" name="apple" id="apple" value="apple">
+        Linux <input type="radio" name="linux" id="linux" value="linux">
+
+        <input type="submit" value="Enviar" onclick="imprimirVariaveis()" >
+    </form>
+
+    <script>
+        function imprimirVariaveis(){
+            var nome = document.getElementById('nome').value;
+            var cursos = document.getElementById('cursos').value;
+            var apple = document.getElementById('apple').value;
+            var linux = document.getElementById('linux').value;
+
+            alert(nome + " " + cursos + " " + apple + " " + linux);
+
+        }
+    </script>
+
+</body>
+</html>
