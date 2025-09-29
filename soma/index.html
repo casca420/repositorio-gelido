@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Cadastro fornecedor</title>
+</head>
+<body>
+    
+    <div id="topo">
+        <h1>Cadastro fornecedor</h1>
+    </div>
+    
+    <div id="conteudo">
+        <div id="esquerda">
+    <form>
+        Nome do Fornecedor: <br> <input type="text" id="nome">
+        <br><br>
+        Estado: <br> </be><input type="text" id="estado">
+        <br><br>
+        Cidade: <br> <input type="text" id="cidade">
+        <br><br>
+</div>
+    
+<div id="direita">
+        Preço de Comida: <br> <input type="text" id="preço">
+        <br><br>
+
+        Pessoa Física <input type="radio" name="sistema" id="fisica" value="fisica">
+        Pessoa Jurídica <input type="radio" name="sistema" id="juridica" value="juridica">
+
+        <br><br>
+
+        <input type="submit" value="Casdastrar" onclick="imprimirVariaveis()" >
+    </form>
+</div>
+</div>
+
+    <script>
+        function imprimirVariaveis(){
+            var nome = document.getElementById('nome').value;
+            var cidade = document.getElementById('cidade').value;
+            var estado = document.getElementById('estado').value;
+            var preço = document.getElementById('preço').value;
+
+            var fisica = document.getElementById('fisica');
+            var juridica = document.getElementById('juridica');
+            var resultado = "";
+
+            if(fisica.checked){
+                resultado = fisica.value;
+            }else if(juridica.checked){
+                resultado = juridica.value;
+            }
+
+            alert(nome + " - " + estado + " - " + cidade + " - " + preço + " - " + resultado);
+
+            document.write(nome + " - " + cursos + " - " + resultado);
+
+        }
+    </script>
+
+</body>
+</html>
