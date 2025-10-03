@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Carros</title>
+</head>
+
+<body>
+ <h2>Troca de Carros</h2>
+
+ Carro: <img src="celta.png" id="carro" width="300">
+ <br><br>
+ <button onclick="celta()">Celta</button>
+ <button onclick="saveiro()">Saveiro</button>
+ <button onclick="jetta()">Jetta</button>
+
+ <script>
+ function celta() {
+ document.getElementById('carro').src = 'celta.png';
+ }
+ function saveiro() {
+ document.getElementById('carro').src = 'saveiro.png';
+ }
+ function jetta() {
+ document.getElementById('carro').src = 'jetta.png';
+ }
+ </script>
+
+</body>
+</html>

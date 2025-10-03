@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Estações</title>
+</head>
+
+<body>
+ <h2>Estações do Ano</h2>
+
+ Paisagem: <img src="primavera.webp" id="paisagem" width="300">
+ <br><br>
+ <button onclick="primavera()">Primavera</button>
+ <button onclick="verão()">Verão</button>
+ <button onclick="outono()">Outono</button>
+ <button onclick="inverno()">Inverno</button>
+
+ <script>
+ function primavera() {
+ document.getElementById('paisagem').src = 'primavera.webp';
+ }
+ function verão() {
+ document.getElementById('paisagem').src = 'verão.webp';
+ }
+ function outono() {
+ document.getElementById('paisagem').src = 'outono.webp';
+ }
+ function inverno() {
+ document.getElementById('paisagem').src = 'inverno.jpg';
+ }
+ </script>
+
+</body>
+</html>

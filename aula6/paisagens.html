@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>paisagens</title>
+</head>
+
+<body>
+ <h2>Troca de Paisagens</h2>
+
+ Paisagem: <img src="praia.webp" id="paisagem" width="300">
+ <br><br>
+ <button onclick="praia()">Praia</button>
+ <button onclick="floresta()">Floresta</button>
+ <button onclick="montanha()">Montanha</button>
+
+ <script>
+ function praia() {
+ document.getElementById('paisagem').src = 'praia.webp';
+ }
+ function floresta() {
+ document.getElementById('paisagem').src = 'floresta.webp';
+ }
+ function montanha() {
+ document.getElementById('paisagem').src = 'montanha.webp';
+ }
+ </script>
+
+</body>
+</html>

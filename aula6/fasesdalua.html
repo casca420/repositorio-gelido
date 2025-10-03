@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Fases da Lua</title>
+</head>
+
+<body>
+ <h2>Fases da Lua</h2>
+
+ Fases da Lua: <img src="nova.jpg" id="lua" width="300">
+ <br><br>
+ <button onclick="praia()">Nova</button>
+ <button onclick="floresta()">Crescente</button>
+ <button onclick="montanha()">Cheia</button>
+ <button onclick="minguante()">Minguante</button>
+
+ <script>
+ function praia() {
+ document.getElementById('lua').src = 'nova.jpg';
+ }
+ function floresta() {
+ document.getElementById('lua').src = 'crescente.jpg';
+ }
+ function montanha() {
+ document.getElementById('lua').src = 'cheia.webp';
+ }
+ function minguante() {
+ document.getElementById('lua').src = 'minguante.jpg';
+ }
+ </script>
+
+</body>
+</html>
