@@ -7,17 +7,17 @@
 </head>
 <body>
     
-    <img src="1.jpg" id="banner" width="800" />
+    <img src="1.jpg" id="banner" width="800"  height="200"/>
 <br>
-    <input type="button" onclick="" value="IR">
-    <input type="button" onclick="" value="Voltar">
+    <input type="button" onclick="Ir()" value="IR">
+    <input type="button" onclick="Voltar()" value="Voltar">
 
     <script>
 
         var imagens = [
             "1.jpg",
             "2.jpg",
-            "3.jpg",
+            "3.png",
     ];
 
         var indice = 0;
@@ -27,8 +27,22 @@
         function mostrarImagens(){
             banner.src = imagens[indice];
         }
-        function Ir(){}
-        function voltar(){}
+        function Ir(){
+            //incrementar o indice
+            indice++;
+            if(indice >= imagens.length){
+                indice = 0;
+            }
+            mostrarImagens();
+
+        }
+        function Voltar(){
+            indice--;
+            if(indice < 0){
+                indice = imagens.length - 1;
+            }
+            mostrarImagens();
+        }
 
     </script>
 

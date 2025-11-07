@@ -1,0 +1,146 @@
+*body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+}
+#topo-porcento{
+    height: 115px;
+    width: 100%;
+    background-color: rgb(3, 3, 87);
+}
+#fundoTopo{
+    position: absolute;
+    height: 115px;
+    width: 100%;
+}
+#topo{
+    position: relative;
+    width: 980px;
+    height: 115px;
+    margin: auto;
+}
+#logo{
+    width: 200px;
+    height: 115px;
+    float: left;
+}
+#menu{
+    width: 780px;
+    height: 115px;
+    float: right;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    word-spacing: 20px;
+}
+#menu a{
+    text-decoration: none;
+    color: goldenrod;
+}
+#menu a:hover{
+    color:blueviolet;
+}
+.espacamento{
+    padding-top: 45px;
+}
+#banner{
+    width: 100%;  
+    height: 400px;
+    background-color: brown;
+}
+#animacao{
+    width: 100%;
+    height: 400px;
+    margin: auto;
+}
+#centraliza{
+    width: 980px;
+    height: 20px;
+    margin: auto;
+    text-align: center;
+}
+#containerTitulo{
+    text-align: center;
+    color: brown;
+    font-weight: bold;
+    font-size: 20px;
+}
+#containerTexto{
+    text-align: justify;
+    width: 980px;
+    height: 400px;
+    margin: auto;
+}
+#esquerda{
+    width: 450px;
+    height: 400px;
+    float: left;
+    margin: auto;
+}
+#direita{
+    width: 450px;
+    height: 400px;
+    float: right;
+    margin: auto;
+}
+#rodape-porcento{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+#rodape{
+    width: 980px;
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+#conteudoEnsinoMedio{
+    width: 980px;
+    height: 600px;
+    line-height: 25px;
+    margin: auto;
+    text-align: justify
+}
+#conteudoEnsinoMedio img{
+    float: left;
+    padding: 10px 10px 20px 15px;
+}
+
+#contato{
+    width: 980px;
+    height: 600px;
+   /* background-color: cadetblue;*/
+    margin: auto;
+    margin-top: 50px;
+}
+#esquerda{
+    width: 450px;
+    height: 500px;
+    float: left;
+   /* background-color: blueviolet; */
+}
+#direita{
+    width: 450px;
+    height: 500px;
+    float: right;
+   /* background-color: blue;*/
+}
+.input{
+    width: 100%;
+    height: 30px;
+}
+.mensagem{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+.botao{
+    width: 100%;
+    height: 30px;
+    border: none;
+    background-color: cornflowerblue;
+    padding: 10px;
+    color: aliceblue;
+}
