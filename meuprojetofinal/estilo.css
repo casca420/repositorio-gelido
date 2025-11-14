@@ -35,7 +35,7 @@
 }
 #menu a{
     text-decoration: none;
-    color: goldenrod;
+    color: black;
 }
 #menu a:hover{
     color:blueviolet;
@@ -126,6 +126,20 @@
     height: 500px;
     float: right;
    /* background-color: blue;*/
+}
+#produto1{
+    background-color: white;
+    width: 340px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+    float: left;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.produto1 img {
+  width: 100%;
+  border-radius: 10px;
 }
 .input{
     width: 100%;
