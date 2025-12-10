@@ -1,0 +1,295 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#topo-porcento {
+    height: 115px;
+    width: 100%;
+}
+
+#fundoTopo {
+    position: absolute;
+    height: 115px;
+    width: 100%;
+}
+
+
+#topo{
+    position: relative;
+    max-width: 980px;
+    width: 100%;
+    height: 115px;
+    margin: 0 auto;
+}
+
+
+
+#logo {
+    width: 200px;
+    height: 115px;
+    float: left;
+}
+
+#menu {
+    width: 780px;
+    height: 115px;
+    float: right;
+    font-size: 16px;
+    text-align: center;
+    color: black;
+    word-spacing: 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu a:hover {
+    color: blueviolet;
+}
+
+.espacamento {
+    padding-top: 45px;
+}
+
+#banner {
+    width: 100%;
+    height: 400px;
+}
+
+#animacao {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+}
+
+#centraliza{
+    max-width: 980px;
+    width: 100%;
+    height: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#containerTitulo {
+    text-align: center;
+    color: brown;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#containerTexto {
+    text-align: justify;
+    width: 980px;
+    height: 400px;
+    margin: auto;
+}
+
+#esquerda{
+    width: 450px;
+    float: left;
+    margin: auto;
+}
+
+#direita{
+    width: 450px;
+    float: right;
+    margin: auto;
+}
+
+
+#rodape-porcento {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+
+#rodape{
+    max-width: 980px;
+    width: 100%;
+    height: 50px;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+
+#conteudoEnsinoMedio{
+    max-width: 980px;
+    width: 100%;
+    /* height: 600px;  <-- tira a altura fixa */
+    line-height: 25px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+#conteudoEnsinoMedio img {
+    float: left;
+    padding: 10px 10px 20px 15px;
+}
+
+#avisopromo{
+    width: 980px;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+}
+.avisopromo a{
+    text-decoration: none;
+    color: #d00000;
+}
+
+
+
+#fundoprodutos {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;          /* espaço entre os cards */
+    justify-content: center;
+}
+
+#produto {
+    background-color: white;
+    width: 340px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+     float: left;  
+     margin-left: 30px; 
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* CONTATO */
+#contato {
+    padding: 50px 20px;
+    background: #ffffff;
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-contato {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contato-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contato-info p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.lista-contato {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-contato li {
+    margin-bottom: 8px;
+}
+
+.lista-contato a {
+    color: #009432;
+    text-decoration: none;
+}
+
+.lista-contato a:hover {
+    text-decoration: underline;
+}
+
+/* FORMULÁRIO */
+.contato-form h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.campo-form {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo-form label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #222;
+}
+
+.campo-form input,
+.campo-form textarea {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 0.95rem;
+    color: #111;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.campo-form input:focus,
+.campo-form textarea:focus {
+    border-color: #009432;
+}
+
+.btn-enviar {
+    padding: 10px 18px;
+    background: #009432;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.btn-enviar:hover {
+    background: #007a28;
+}
+
+/* MENSAGEM */
+.mensagem-resultado {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.mensagem-resultado.sucesso {
+    color: #009432;
+}
+
+.mensagem-resultado.erro {
+    color: #d00000;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .container-contato {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
